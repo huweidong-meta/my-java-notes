@@ -113,9 +113,9 @@ git commit -m "first commit" // 把添加的文件提交到本地仓库，并填
 
 git remote add origin 你的远程仓库地址  // 把本地库与远程仓库关联
 
-git pull --allow-unrelated-histories  // 忽略本地库与远程库历史版本
+git pull --allow-unrelated-histories  // 第一次推送前，要从远程仓库pull代码可用这个命令，防止远程库有历史版本冲突
 
-git push -u origin master    // 第一次推送时
+git push -u origin master    // 第一次推送时用到-u参数
 
-git push origin master  // 第一次推送后，直接使用该命令即可推送
+git push origin master  // 第一次推送后，不再需要-u参数
 ````
